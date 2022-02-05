@@ -16,9 +16,9 @@ LANG: C
 
 \*/
 
-#include <stdio.h>
+#include \<stdio.h>
 
-#include <stdlib.h>
+#include \<stdlib.h>
 
 #define MAXN 300
 
@@ -42,9 +42,9 @@ void read\_matrix( FILE \*fin, Matrix \*matrix ) {
 
  }
 
- for( size\_t r = 0; r < matrix->R; ++r ) {
+ for( size\_t r = 0; r \< matrix->R; ++r ) {
 
- for( size\_t c = 0; c < matrix->C; ++c ) {
+ for( size\_t c = 0; c \< matrix->C; ++c ) {
 
  fscanf( fin, "%d", &matrix->index\[r\]\[c\] );
 
@@ -58,9 +58,9 @@ void print\_matrix( FILE \*fout, Matrix \*matrix ) {
 
  fprintf( fout, "%zu %zu\\n", matrix->R, matrix->C );
 
- for( size\_t r = 0; r < matrix->R; ++r ) {
+ for( size\_t r = 0; r \< matrix->R; ++r ) {
 
- for( size\_t c = 0; c < matrix->C - 1; ++c ) {
+ for( size\_t c = 0; c \< matrix->C - 1; ++c ) {
 
  fprintf( fout, "%d ", matrix->index\[r\]\[c\] );
 
@@ -88,13 +88,13 @@ void mult\_matrix( Matrix \*a, Matrix \*b, Matrix \*prod ) {
 
  prod->C = b->C;
 
- for( size\_t r = 0; r < prod->R; ++r ) {
+ for( size\_t r = 0; r \< prod->R; ++r ) {
 
- for( size\_t c = 0; c < prod->C; ++c ) {
+ for( size\_t c = 0; c \< prod->C; ++c ) {
 
  prod->index\[r\]\[c\] = 0;
 
- for( size\_t i = 0; i < inner; ++i ) {
+ for( size\_t i = 0; i \< inner; ++i ) {
 
  prod->index\[r\]\[c\] += a->index\[r\]\[i\] \* b->index\[i\]\[c\];
 

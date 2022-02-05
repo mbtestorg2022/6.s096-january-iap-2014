@@ -48,11 +48,56 @@ This course is offered on a pass/fail grading system. In order to pass, students
 
 Each of the three coding assignments is given at the end of the first three weeks, followed by the release of the problem statement for the last assignment (final project). Students will be asked to complete two reviews of code that is written by peer students.
 
-| ACTIVITIES | PERCENTAGES |
-| --- | --- |
-| Assignment 1 | 20 |
-| Assignment 2 | 20 |
-| Assignment 3 | 10 |
-| Assignment 4 (final project) | 50 
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+ACTIVITIES
+{{< thclose >}}
+{{< thopen >}}
+PERCENTAGES
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+Assignment 1
+{{< tdclose >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+Assignment 2
+{{< tdclose >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+Assignment 3
+{{< tdclose >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+Assignment 4 (final project)
+{{< tdclose >}}
+{{< tdopen >}}
+50
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
 
 For more information on the coding assignments and the requirements of the code reviews, refer to the [Assignments]({{< baseurl >}}/pages/assignments).

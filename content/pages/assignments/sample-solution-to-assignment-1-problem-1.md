@@ -16,13 +16,13 @@ LANG: C
 
 \*/
 
-#include <stdio.h>
+#include \<stdio.h>
 
-#include <stdlib.h>
+#include \<stdlib.h>
 
-#include <stdint.h>
+#include \<stdint.h>
 
-#include <math.h>
+#include \<math.h>
 
 #define ABSOLUTE\_WIDTH 31
 
@@ -102,7 +102,7 @@ int main() {
 
  fscanf( input, "%zu", &N );
 
- for( size\_t i = 0; i < N; ++i ) {
+ for( size\_t i = 0; i \< N; ++i ) {
 
  fscanf( input, "%f", &f );
 

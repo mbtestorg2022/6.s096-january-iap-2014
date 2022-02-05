@@ -16,11 +16,11 @@ LANG: C
 
 \*/
 
-#include <stdio.h>
+#include \<stdio.h>
 
-#include <stdlib.h>
+#include \<stdlib.h>
 
-#include <string.h>
+#include \<string.h>
 
 typedef struct Matrix\_s {
 
@@ -74,9 +74,9 @@ Matrix\* read\_matrix( FILE \*input, Transpose orient ) {
 
  matrix = allocate\_matrix( R, C );
 
- for( size\_t r = 0; r < matrix->R; ++r ) {
+ for( size\_t r = 0; r \< matrix->R; ++r ) {
 
- for( size\_t c = 0; c < matrix->C; ++c ) {
+ for( size\_t c = 0; c \< matrix->C; ++c ) {
 
  fscanf( input, "%d", &matrix->index\[c + r \* C\] );
 
@@ -88,9 +88,9 @@ Matrix\* read\_matrix( FILE \*input, Transpose orient ) {
 
  matrix = allocate\_matrix( C, R );
 
- for( size\_t r = 0; r < matrix->C; ++r ) {
+ for( size\_t r = 0; r \< matrix->C; ++r ) {
 
- for( size\_t c = 0; c < matrix->R; ++c ) {
+ for( size\_t c = 0; c \< matrix->R; ++c ) {
 
  fscanf( input, "%d", &matrix->index\[r + c \* R\] );
 
@@ -114,9 +114,9 @@ void print\_matrix( FILE \*output, Matrix \*matrix ) {
 
  fprintf( output, "%zu %zu\\n", matrix->R, matrix->C );
 
- for( size\_t r = 0; r < matrix->R; ++r ) {
+ for( size\_t r = 0; r \< matrix->R; ++r ) {
 
- for( size\_t c = 0; c < matrix->C - 1; ++c ) {
+ for( size\_t c = 0; c \< matrix->C - 1; ++c ) {
 
  fprintf( output, "%d ", matrix->index\[c + r \* matrix->C\] );
 
@@ -142,13 +142,13 @@ Matrix\* product\_matrix( Matrix \*a, Matrix \*b ) {
 
  size\_t nRows = prod->R, nCols = prod->C, nInner = a->C;
 
- for( size\_t r = 0; r < nRows; ++r ) {
+ for( size\_t r = 0; r \< nRows; ++r ) {
 
- for( size\_t c = 0; c < nCols; ++c ) {
+ for( size\_t c = 0; c \< nCols; ++c ) {
 
  prod->index\[c + r \* nCols\] = 0;
 
- for( size\_t i = 0; i < nInner; ++i ) {
+ for( size\_t i = 0; i \< nInner; ++i ) {
 
  prod->index\[c + r \* nCols\] += a->index\[i + r \* nInner\] \* b->index\[i + c \* nInner\];
 
